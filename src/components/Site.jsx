@@ -21,12 +21,12 @@ const Site = (props) => {
         <img
           src={props.image}
           alt={props.title}
-          className="object-cover transition-transform duration-500 transform rounded-3xl md:h-52 hover:scale-105"
+          className="object-cover transition-transform duration-500 transform h-44 rounded-3xl md:h-52 hover:scale-105"
         />
       </a>
 
       <a
-        href={props.title}
+        href={props.source_code}
         target="_blank"
         className={
           'p-2 rounded-md font-semibold shadow-xl ' +

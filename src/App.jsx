@@ -1,8 +1,8 @@
 import backroads from './assets/backroads-app.png'
 import mobile from './assets/Mobile_first.png'
+import Recipe from './assets/Recipe.png'
 
 import Site from './components/Site'
-import { useState, useEffect } from 'react'
 
 function App() {
   const colors = ['bg-teal-500', 'bg-orange-400', 'bg-purple-500']
@@ -36,6 +36,7 @@ function App() {
           image={backroads}
           button_color={colors[3 % colors.length]}
           hover={hover_colors[3 % hover_colors.length]}
+          source_code="https://github.com/TheWonderingGecko/backroads"
         />
 
         <Site
@@ -44,22 +45,16 @@ function App() {
           image={mobile}
           button_color={colors[1 % colors.length]}
           hover={hover_colors[1 % hover_colors.length]}
+          source_code="https://github.com/TheWonderingGecko/mobile-first-practice"
         />
 
         <Site
-          title="Backroads App"
-          link="https://candid-centaur-f32f8b.netlify.app/"
-          image={backroads}
+          title="Taiilwind CSS Recipe App"
+          link="https://mellow-torrone-13995e.netlify.app/"
+          image={Recipe}
           button_color={colors[3 % colors.length]}
           hover={hover_colors[3 % hover_colors.length]}
-        />
-
-        <Site
-          title="Backroads App"
-          link="https://candid-centaur-f32f8b.netlify.app/"
-          image={backroads}
-          button_color={colors[1 % colors.length]}
-          hover={hover_colors[1 % hover_colors.length]}
+          source_code="https://github.com/TheWonderingGecko/tailwind-practice"
         />
       </section>
     </div>
