@@ -3,8 +3,7 @@ const Site = (props) => {
   return (
     <article
       className={
-        'flex flex-col items-center justify-center gap-4 p-4 font-semibold  rounded-3xl ' +
-        props.bgColor
+        'flex flex-col items-center justify-center gap-4 p-4 font-semibold  rounded-3xl h-80 bg-purple-500 text-gray-100 border-2'
       }
     >
       <header>
@@ -12,7 +11,7 @@ const Site = (props) => {
           <a
             href={props.link}
             target="_blank"
-            className="text-xl font-extrabold tracking-wider shadow-xl "
+            className="text-xl font-bold tracking-wider "
           >
             {props.title}
           </a>
@@ -22,7 +21,7 @@ const Site = (props) => {
         <img
           src={props.image}
           alt={props.title}
-          className="object-cover rounded-3xl "
+          className="object-cover transition-transform duration-500 transform rounded-3xl md:h-52 hover:scale-105"
         />
       </a>
 
@@ -30,7 +29,7 @@ const Site = (props) => {
         href={props.title}
         target="_blank"
         className={
-          'p-2 rounded-md font-bold shadow-xl ' +
+          'p-2 rounded-md font-semibold shadow-xl ' +
           props.button_color +
           props.hover
         }
