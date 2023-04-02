@@ -3,11 +3,11 @@ const Site = (props) => {
   return (
     <article
       className={
-        'flex flex-col items-center justify-center gap-4 p-4 font-semibold  rounded-3xl h-80 bg-purple-500 text-gray-100 border-2'
+        'flex flex-col items-center justify-center gap-4 p-4 font-semibold  rounded-3xl h-80 bg-purple-500 text-gray-100 border-2 landscape:h-96'
       }
     >
       <header>
-        <h2>
+        <h2 className=" landscape:h-16">
           <a
             href={props.link}
             target="_blank"
