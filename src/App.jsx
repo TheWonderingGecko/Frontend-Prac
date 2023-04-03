@@ -14,8 +14,8 @@ function App() {
 
   return (
     <div className="flex flex-col items-center w-screen h-screen gap-6 pb-4 overflow-scroll bg-gray-800">
-      <div className="sticky top-0 z-40 flex flex-col justify-center w-full pb-4 font-extrabold text-center bg-teal-500 h-1/4">
-        <h1 className="text-3xl font-bold text-gray-100">
+      <div className="sticky top-0 z-40 flex flex-col justify-center w-full pb-4 font-extrabold text-center bg-teal-500 h-1/4 min-w-[375px]">
+        <h1 className="text-3xl font-bold text-gray-100 ">
           Welcome to my Frontend Portfolio
         </h1>
       </div>
@@ -29,7 +29,7 @@ function App() {
           main portfolio reserved for those projects.
         </div>
       </div>
-      <section className="flex flex-col items-center justify-center w-3/4 grid-cols-3 gap-4 text-center md:grid">
+      <section className="flex flex-col items-center justify-center w-3/4 grid-cols-2 gap-4 text-center md:grid lg:grid-cols-3">
         <Site
           title="Backroads App"
           link="https://candid-centaur-f32f8b.netlify.app/"
