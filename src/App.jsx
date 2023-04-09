@@ -1,6 +1,7 @@
 import backroads from './assets/backroads-app.png'
 import mobile from './assets/Mobile_first.png'
 import Recipe from './assets/Recipe.png'
+import Portfolio from './assets/Figma-Portfolio-App.png'
 
 import Site from './components/Site'
 
@@ -30,6 +31,14 @@ function App() {
         </div>
       </div>
       <section className="flex flex-col items-center justify-center w-3/4 grid-cols-2 gap-4 text-center md:grid lg:grid-cols-3">
+        <Site
+          title="Frontend Mentor Portfolio App"
+          link="https://iridescent-centaur-9f2090.netlify.app/"
+          image={Portfolio}
+          button_color={colors[1 % colors.length]}
+          hover={hover_colors[1 % hover_colors.length]}
+          source_code="https://github.com/TheWonderingGecko/Portfolio-design"
+        />
         <Site
           title="Backroads App"
           link="https://candid-centaur-f32f8b.netlify.app/"
